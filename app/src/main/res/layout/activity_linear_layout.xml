@@ -43,4 +43,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="button6" />
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aaa"
+        android:id="@+id/togglebutton"
+        />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchid"
+        />
+
 </LinearLayout>

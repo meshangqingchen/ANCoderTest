@@ -79,6 +79,7 @@ public class ImageViewActivity extends AppCompatActivity {
         plus.setOnClickListener(listener);
         minus.setOnClickListener(listener);
 
+
         image1.setOnTouchListener(new View.OnTouchListener(){
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -89,22 +90,38 @@ public class ImageViewActivity extends AppCompatActivity {
                 System.out.println(bitmap.getWidth());
                 System.out.println(image1.getWidth());
                 // bitmap图片实际大小与第一个ImageView的缩放比例
-                double scale = 1.0 * bitmap.getHeight() / image1.getHeight();
-                // 获取需要显示的图片的开始点
-                int x = (int) (event.getX() * scale);
-                int y = (int) (event.getY() * scale);
+                double scaleX = 1.0 * bitmap.getWidth() / image1.getWidth();
+                double scaleY = 1.0 * bitmap.getHeight() / image1.getHeight();
 
-                if (x + 120 > bitmap.getWidth())
+
+                // 获取需要显示的图片的开始点
+                System.out.println("x = "+event.getX());
+                System.out.println("y = "+event.getY());
+
+                int x = (int) (event.getX() * scaleX);
+                int y = (int) (event.getY() * scaleY);
+
+                if (x + 60 > bitmap.getWidth())
                 {
-                    x = bitmap.getWidth() - 120;
+                    x = bitmap.getWidth() - 60;
                 }
-                if (y + 120 > bitmap.getHeight())
+
+                if (y + 60 > bitmap.getHeight())
                 {
-                    y = bitmap.getHeight() - 120;
+                    y = bitmap.getHeight() - 60;
                 }
+
+                if (x - 60 <= 0){
+                    x = 60;
+                }
+
+                if (y - 60 <= 0){
+                    y = 60;
+                }
+
                 // 显示图片的指定区域
                 image2.setImageBitmap(Bitmap.createBitmap(bitmap
-                        , x, y, 120, 120));
+                        , x-60, y-60, 120, 120));
                 image2.setImageAlpha(alpha);
                 return false;
             }

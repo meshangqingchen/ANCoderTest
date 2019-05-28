@@ -22,13 +22,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="降低透明度"
-            android:id="@+id/zendatoumingdu"
+            android:id="@+id/jiangditoumingdu"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="下一张"
-            android:id="@+id/zendatoumingdu"
+            android:id="@+id/xiayizhang"
             />
     </LinearLayout>
     
@@ -36,8 +36,10 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         android:layout_marginTop="20dp"
+        android:id="@+id/bigimage"
         />
     <ImageView
+        android:id="@+id/smailimage"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:background="#00f"

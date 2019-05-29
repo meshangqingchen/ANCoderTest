@@ -130,19 +130,3 @@ public class ImageViewActivity extends AppCompatActivity {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

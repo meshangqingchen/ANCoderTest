@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ImageView.ImageViewActivity"></activity>
+        <activity android:name=".GridLayout.GridViewActivity"></activity>
+        <activity
+            android:name=".ListActivityTest.listViewActivity"
+            android:label="@string/title_activity_list_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ArrayAdapterTest.ArrayAdapterActivity" />
+        <activity android:name=".SimpleListViewTest.SimpleListViewActivity" />
+        <activity android:name=".QuickContactBadgeTest.QuickContactBadgeActivity" />
+        <activity android:name=".ImageButtonTest.ImageButtonActivi" />
+        <activity android:name=".ImageView.ImageViewActivity" />
         <activity android:name=".GridLayout.GridLayoutActivity" />
         <activity android:name=".RelativeLayout.RelativeLayoutActivity" />
         <activity android:name=".FrameLayout.FrameLayoutActivity" />

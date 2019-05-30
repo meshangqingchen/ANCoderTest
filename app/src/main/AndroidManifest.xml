@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewSwitcherTest.ViewSwitcherTestActivity"></activity>
+        <activity android:name=".ViewSwitcherTest.TextSwitcherActivity"></activity>
+        <activity android:name=".ViewSwitcherTest.ImageSwitcherActivity" />
+        <activity android:name=".ViewSwitcherTest.ViewSwitcherTestActivity" />
         <activity
             android:name=".SeekBarTest.SeekBarTestActivity"
             android:label="@string/title_activity_seek_bar_test"

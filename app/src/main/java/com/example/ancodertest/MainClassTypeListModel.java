@@ -21,6 +21,10 @@ import com.example.ancodertest.StackViewTest.StackViewActivityTest;
 import com.example.ancodertest.TableLayout.TableLayoutActivity;
 import com.example.ancodertest.Test.TestActivity;
 import com.example.ancodertest.ListActivityTest.listViewActivity;
+import com.example.ancodertest.ViewSwitcherTest.ImageSwitcherActivity;
+import com.example.ancodertest.ViewSwitcherTest.TextSwitcherActivity;
+import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
+
 import java.util.List;
 import static java.util.Arrays.asList;
 
@@ -43,7 +47,10 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("AdapterViewFlipperActivity","Flipper", AdapterViewFlipperActivity.class),
             new MainClassTypeModel("StackViewActivityTest","stack 栈试图", StackViewActivityTest.class),
             new MainClassTypeModel("ProgressBarTestActivity","进度条", ProgressBarTestActivity.class),
-            new MainClassTypeModel("SeekBarTestActivity","SeekBar控制音乐电影播放进度", SeekBarTestActivity.class)
+            new MainClassTypeModel("SeekBarTestActivity","SeekBar控制音乐电影播放进度", SeekBarTestActivity.class),
+            new MainClassTypeModel("ViewSwitcherTestActivity","类似collectionView", ViewSwitcherTestActivity.class),
+            new MainClassTypeModel("ImageSwitcherActivity","---", ImageSwitcherActivity.class),
+            new MainClassTypeModel("TextSwitcherActivity","text", TextSwitcherActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

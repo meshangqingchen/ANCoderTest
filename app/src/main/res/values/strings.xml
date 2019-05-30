@@ -2,4 +2,6 @@
     <string name="app_name">ANCoderTest</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_list_view">listViewActivity</string>
+    <string name="title_activity_adapter_view_flipper">AdapterViewFlipperActivity</string>
+    <string name="title_activity_seek_bar_test">SeekBarTestActivity</string>
 </resources>

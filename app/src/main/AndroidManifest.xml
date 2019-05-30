@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GridLayout.GridViewActivity"></activity>
+        <activity
+            android:name=".SeekBarTest.SeekBarTestActivity"
+            android:label="@string/title_activity_seek_bar_test"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ProgressBarTest.ProgressBarTestActivity" />
+        <activity android:name=".StackViewTest.StackViewActivityTest" />
+        <activity
+            android:name=".AdapterViewFlipperTest.AdapterViewFlipperActivity"
+            android:label="@string/title_activity_adapter_view_flipper"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ExpandableListViewTest.ExpandableListViewActivity" />
+        <activity android:name=".GridLayout.GridViewActivity" />
         <activity
             android:name=".ListActivityTest.listViewActivity"
             android:label="@string/title_activity_list_view"

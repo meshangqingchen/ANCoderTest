@@ -1,16 +1,23 @@
 package com.example.ancodertest;
 
+import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
 
+import com.example.ancodertest.AdapterViewFlipperTest.AdapterViewFlipperActivity;
 import com.example.ancodertest.ArrayAdapterTest.ArrayAdapterActivity;
+import com.example.ancodertest.ExpandableListViewTest.ExpandableListViewActivity;
 import com.example.ancodertest.FrameLayout.FrameLayoutActivity;
 import com.example.ancodertest.GridLayout.GridLayoutActivity;
+import com.example.ancodertest.GridLayout.GridViewActivity;
 import com.example.ancodertest.ImageButtonTest.ImageButtonActivi;
 import com.example.ancodertest.ImageView.ImageViewActivity;
 import com.example.ancodertest.LinearLayout.LinearLayoutActivity;
+import com.example.ancodertest.ProgressBarTest.ProgressBarTestActivity;
 import com.example.ancodertest.QuickContactBadgeTest.QuickContactBadgeActivity;
 import com.example.ancodertest.RelativeLayout.RelativeLayoutActivity;
+import com.example.ancodertest.SeekBarTest.SeekBarTestActivity;
 import com.example.ancodertest.SimpleListViewTest.SimpleListViewActivity;
+import com.example.ancodertest.StackViewTest.StackViewActivityTest;
 import com.example.ancodertest.TableLayout.TableLayoutActivity;
 import com.example.ancodertest.Test.TestActivity;
 import com.example.ancodertest.ListActivityTest.listViewActivity;
@@ -30,7 +37,13 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("QuickContactBadgeActivity","快速联系QuickContactBadge", QuickContactBadgeActivity.class),
             new MainClassTypeModel("SimpleListViewActivity","超简单ListView", SimpleListViewActivity.class),
             new MainClassTypeModel("ArrayAdapterActivity","ArrayAdapter配合ListView", ArrayAdapterActivity.class),
-            new MainClassTypeModel("listViewActivity","类似tableViewController",listViewActivity.class)
+            new MainClassTypeModel("listViewActivity","类似tableViewController",listViewActivity.class),
+            new MainClassTypeModel("GridViewActivity","GridView SimpleAdapter", GridViewActivity.class),
+            new MainClassTypeModel("ExpandableListViewActivity","可扩展的ListView", ExpandableListViewActivity.class),
+            new MainClassTypeModel("AdapterViewFlipperActivity","Flipper", AdapterViewFlipperActivity.class),
+            new MainClassTypeModel("StackViewActivityTest","stack 栈试图", StackViewActivityTest.class),
+            new MainClassTypeModel("ProgressBarTestActivity","进度条", ProgressBarTestActivity.class),
+            new MainClassTypeModel("SeekBarTestActivity","SeekBar控制音乐电影播放进度", SeekBarTestActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

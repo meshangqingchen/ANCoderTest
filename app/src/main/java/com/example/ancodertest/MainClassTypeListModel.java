@@ -11,6 +11,7 @@ import com.example.ancodertest.GridLayout.GridLayoutActivity;
 import com.example.ancodertest.GridLayout.GridViewActivity;
 import com.example.ancodertest.ImageButtonTest.ImageButtonActivi;
 import com.example.ancodertest.ImageView.ImageViewActivity;
+import com.example.ancodertest.InternPush.IntentPushActivityB;
 import com.example.ancodertest.LinearLayout.LinearLayoutActivity;
 import com.example.ancodertest.ProgressBarTest.ProgressBarTestActivity;
 import com.example.ancodertest.QuickContactBadgeTest.QuickContactBadgeActivity;
@@ -24,6 +25,7 @@ import com.example.ancodertest.ListActivityTest.listViewActivity;
 import com.example.ancodertest.ViewSwitcherTest.ImageSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.TextSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
+import com.example.ancodertest.InternPush.intentPushActivity;
 
 import java.util.List;
 import static java.util.Arrays.asList;
@@ -50,7 +52,8 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("SeekBarTestActivity","SeekBar控制音乐电影播放进度", SeekBarTestActivity.class),
             new MainClassTypeModel("ViewSwitcherTestActivity","类似collectionView", ViewSwitcherTestActivity.class),
             new MainClassTypeModel("ImageSwitcherActivity","---", ImageSwitcherActivity.class),
-            new MainClassTypeModel("TextSwitcherActivity","text", TextSwitcherActivity.class)
+            new MainClassTypeModel("TextSwitcherActivity","text", TextSwitcherActivity.class),
+            new MainClassTypeModel("intentPushActivity","跳转传值反向传值",intentPushActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

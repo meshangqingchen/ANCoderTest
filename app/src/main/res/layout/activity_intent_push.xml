@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InternPush.intentPushActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/intent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正常传值"/>
+        <Button
+            android:id="@+id/intent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正向传值跳转"/>
+        <Button
+            android:id="@+id/intent3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反向传值跳转"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

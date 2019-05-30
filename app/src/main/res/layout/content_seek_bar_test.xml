@@ -16,4 +16,13 @@
         android:max="255"
         android:progress="255"
         android:thumb="@drawable/red"/>
+    <RatingBar
+        android:id="@+id/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:max="255"
+        android:progress="120"
+        android:stepSize="0.5"
+        />
 </LinearLayout>

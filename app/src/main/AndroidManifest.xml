@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ViewSwitcherTest.ViewSwitcherTestActivity"></activity>
         <activity
             android:name=".SeekBarTest.SeekBarTestActivity"
             android:label="@string/title_activity_seek_bar_test"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ProgressBarTest.ProgressBarTestActivity" />
         <activity android:name=".StackViewTest.StackViewActivityTest" />
         <activity

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InternPush.IntentPushActivityB"></activity>
+        <activity android:name=".FragmentTest.FragmentTestActivity"></activity>
+        <activity android:name=".InternPush.IntentPushActivityB" />
         <activity android:name=".InternPush.intentPushActivity" />
         <activity android:name=".ViewSwitcherTest.TextSwitcherActivity" />
         <activity android:name=".ViewSwitcherTest.ImageSwitcherActivity" />

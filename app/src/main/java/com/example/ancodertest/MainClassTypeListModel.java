@@ -6,6 +6,7 @@ import android.widget.TextView;
 import com.example.ancodertest.AdapterViewFlipperTest.AdapterViewFlipperActivity;
 import com.example.ancodertest.ArrayAdapterTest.ArrayAdapterActivity;
 import com.example.ancodertest.ExpandableListViewTest.ExpandableListViewActivity;
+import com.example.ancodertest.FragmentTest.FragmentTestActivity;
 import com.example.ancodertest.FrameLayout.FrameLayoutActivity;
 import com.example.ancodertest.GridLayout.GridLayoutActivity;
 import com.example.ancodertest.GridLayout.GridViewActivity;
@@ -53,7 +54,8 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("ViewSwitcherTestActivity","类似collectionView", ViewSwitcherTestActivity.class),
             new MainClassTypeModel("ImageSwitcherActivity","---", ImageSwitcherActivity.class),
             new MainClassTypeModel("TextSwitcherActivity","text", TextSwitcherActivity.class),
-            new MainClassTypeModel("intentPushActivity","跳转传值反向传值",intentPushActivity.class)
+            new MainClassTypeModel("intentPushActivity","跳转传值反向传值",intentPushActivity.class),
+            new MainClassTypeModel("FragmentTestActivity","Fragent 测试", FragmentTestActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

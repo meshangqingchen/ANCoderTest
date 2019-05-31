@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityThelifecycle.ActivityThelifecycle">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转下一个"
+        android:onClick="next"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:onClick="goback"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+一进来A界面\n
+D/--CrazyIt--: -------onCreate创建------\n
+D/--CrazyIt--: -------onStart开始------\n
+D/--CrazyIt--: -------onResume正在运行------\n\n
+A界面跳转到B界面\n
+D/--CrazyIt--: -------onPause暂停------\n
+D/--CrazyIt--: -------onStop------\n\n
+B界面返回A界面\n
+D/--CrazyIt--: -------onRestart重新开始------\n
+D/--CrazyIt--: -------onStart开始------\n
+D/--CrazyIt--: -------onResume正在运行------\n\n
+A界面退出\n
+D/--CrazyIt--: -------onPause暂停------\n
+D/--CrazyIt--: -------onStop------\n
+D/--CrazyIt--: -------onDestroy-----\n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

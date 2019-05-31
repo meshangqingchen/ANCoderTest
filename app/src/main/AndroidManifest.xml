@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FragmentTest.FragmentTestActivity"></activity>
+        <activity android:name=".ActivityThelifecycle.ActivityThelifecycleB"></activity>
+        <activity android:name=".ActivityThelifecycle.ActivityThelifecycle" />
+        <activity android:name=".FragmentTest.FragmentTestActivity" />
         <activity android:name=".InternPush.IntentPushActivityB" />
         <activity android:name=".InternPush.intentPushActivity" />
         <activity android:name=".ViewSwitcherTest.TextSwitcherActivity" />
@@ -46,6 +48,8 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- 设置intent-filter指定程序入口 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

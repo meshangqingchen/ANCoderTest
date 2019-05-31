@@ -48,7 +48,6 @@ public class FragmentTestActivity extends AppCompatActivity implements View.OnCl
     }
 
 
-
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -78,7 +77,6 @@ public class FragmentTestActivity extends AppCompatActivity implements View.OnCl
                     add(R.id.fl_main,targetFragment).
                     show(targetFragment).
                     commit();
-
             mListFragment.add(targetFragment);
         }else {
             transaction

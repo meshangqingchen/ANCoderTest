@@ -3,6 +3,7 @@ package com.example.ancodertest;
 import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
 
+import com.example.ancodertest.ActivityThelifecycle.ActivityThelifecycle;
 import com.example.ancodertest.AdapterViewFlipperTest.AdapterViewFlipperActivity;
 import com.example.ancodertest.ArrayAdapterTest.ArrayAdapterActivity;
 import com.example.ancodertest.ExpandableListViewTest.ExpandableListViewActivity;
@@ -55,7 +56,8 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("ImageSwitcherActivity","---", ImageSwitcherActivity.class),
             new MainClassTypeModel("TextSwitcherActivity","text", TextSwitcherActivity.class),
             new MainClassTypeModel("intentPushActivity","跳转传值反向传值",intentPushActivity.class),
-            new MainClassTypeModel("FragmentTestActivity","Fragent 测试", FragmentTestActivity.class)
+            new MainClassTypeModel("FragmentTestActivity","Fragent 测试", FragmentTestActivity.class),
+            new MainClassTypeModel("ActivityThelifecycle","activity生命周期", ActivityThelifecycle.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

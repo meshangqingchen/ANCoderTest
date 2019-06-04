@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--RelativeLayout-->
+<!--android.support.constraint.ConstraintLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:StartView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheCustomViewTest.CustomStarView">
+
+
+    <LinearLayout
+        android:id="@+id/ll_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <!--StartView:startCount="5"-->
+
+        <TextView
+            android:id="@+id/tv_average_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color1"
+            android:textSize="16sp"
+            android:text="333333333333333333333333333" />
+
+        <com.example.ancodertest.TheCustomViewTest.StarView
+            android:id="@+id/average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            StartView:startEmpty="@drawable/star_dark"
+            StartView:startFill="@drawable/star_light"
+            StartView:startSize="15dp"
+            StartView:startSpace="5dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

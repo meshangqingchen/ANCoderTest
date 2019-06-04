@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityThelifecycle.ActivityThelifecycleB"></activity>
+        <activity android:name=".TheCustomViewTest.CustomStarView"></activity>
+        <activity android:name=".GestureDetector.GestureDetector" />
+        <activity android:name=".ActivityThelifecycle.ActivityThelifecycleB" />
         <activity android:name=".ActivityThelifecycle.ActivityThelifecycle" />
         <activity android:name=".FragmentTest.FragmentTestActivity" />
         <activity android:name=".InternPush.IntentPushActivityB" />

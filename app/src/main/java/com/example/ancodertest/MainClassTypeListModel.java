@@ -1,5 +1,6 @@
 package com.example.ancodertest;
 
+import com.example.ancodertest.GestureDetector.GestureDetector;
 import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
 
@@ -24,6 +25,7 @@ import com.example.ancodertest.StackViewTest.StackViewActivityTest;
 import com.example.ancodertest.TableLayout.TableLayoutActivity;
 import com.example.ancodertest.Test.TestActivity;
 import com.example.ancodertest.ListActivityTest.listViewActivity;
+import com.example.ancodertest.TheCustomViewTest.CustomStarView;
 import com.example.ancodertest.ViewSwitcherTest.ImageSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.TextSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
@@ -57,7 +59,9 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("TextSwitcherActivity","text", TextSwitcherActivity.class),
             new MainClassTypeModel("intentPushActivity","跳转传值反向传值",intentPushActivity.class),
             new MainClassTypeModel("FragmentTestActivity","Fragent 测试", FragmentTestActivity.class),
-            new MainClassTypeModel("ActivityThelifecycle","activity生命周期", ActivityThelifecycle.class)
+            new MainClassTypeModel("ActivityThelifecycle","activity生命周期", ActivityThelifecycle.class),
+            new MainClassTypeModel("GestureDetector","手势探测器", com.example.ancodertest.GestureDetector.GestureDetector.class),
+            new MainClassTypeModel("CustomStarView","自定义✨view", CustomStarView.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

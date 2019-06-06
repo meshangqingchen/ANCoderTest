@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppBarLayoutTest.AppBarLayoutActivity">
+    <!--android:layout_height="?android:attr/actionBarSize"-->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AppBarLayout"
+        >
+
+        <!--scroll一个使用 当scrollView滑到最上方的时候 AppBarLayout才跟着滑动-->
+
+        <!--scroll|enterAlways 当ScrollView 向下滑动时，
+        子View 将直接向下滑动，而不管ScrollView 是否在滑动 -->
+
+        <!--scroll|enterAlways|enterAlwaysCollapsed scrollView向下滑动AppBarLayout
+        直接向下滑动滑到minHeight 停止当scrollView滑到最上方在AppBarLayout 再次接着画完-->
+
+        <!--scroll|exitUntilCollapsed 当ScrollView 向上滑动时 最底层View响应滑动事件
+        滑动至折叠高度，也就是通过minimum height 设置的最小高度后，就固定不动了，
+        再把滑动事件交给 scrollview,然后 scrollview才开始滑动-->
+
+        <!--scroll|snap 当ScrollView 下滑到顶部时,如果子view只露出30%的话,子view就会自动折叠回去,
+        如果露出60%的话,就会自动展开-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="@color/design_default_color_primary"
+            app:layout_scrollFlags="scroll|snap"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--将你的内容放在这里-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/color2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/color5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/color3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/color6"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/color1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/color4" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/color2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/color5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/color3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/color6"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/color1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/color4" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/color2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/color5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/color3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/color6"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/color1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/color4" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+<!--android.support.constraint.ConstraintLayout-->

@@ -17,4 +17,17 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <!--主标题-->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#f0f0</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!--子标题-->
+    <style name="ToolbarSubtitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">#f0f0</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
 </resources>

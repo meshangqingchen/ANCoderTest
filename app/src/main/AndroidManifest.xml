@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TheCustomViewTest.CustomStarView"></activity>
+        <activity
+            android:name=".AppBarLayoutTest.AppBarLayoutActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ToolBarTest.ToolBarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ScrowViewActivityTest.LinkageNestedScrollView" />
+        <activity
+            android:name=".ScrowViewActivityTest.ScrowViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".TheCustomViewTest.CustomStarView" />
         <activity android:name=".GestureDetector.GestureDetector" />
         <activity android:name=".ActivityThelifecycle.ActivityThelifecycleB" />
         <activity android:name=".ActivityThelifecycle.ActivityThelifecycle" />

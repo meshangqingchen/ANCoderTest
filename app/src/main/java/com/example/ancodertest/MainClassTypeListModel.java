@@ -1,5 +1,6 @@
 package com.example.ancodertest;
 
+import com.example.ancodertest.AppBarLayoutTest.AppBarLayoutActivity;
 import com.example.ancodertest.GestureDetector.GestureDetector;
 import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
@@ -19,6 +20,8 @@ import com.example.ancodertest.LinearLayout.LinearLayoutActivity;
 import com.example.ancodertest.ProgressBarTest.ProgressBarTestActivity;
 import com.example.ancodertest.QuickContactBadgeTest.QuickContactBadgeActivity;
 import com.example.ancodertest.RelativeLayout.RelativeLayoutActivity;
+import com.example.ancodertest.ScrowViewActivityTest.LinkageNestedScrollView;
+import com.example.ancodertest.ScrowViewActivityTest.ScrowViewActivity;
 import com.example.ancodertest.SeekBarTest.SeekBarTestActivity;
 import com.example.ancodertest.SimpleListViewTest.SimpleListViewActivity;
 import com.example.ancodertest.StackViewTest.StackViewActivityTest;
@@ -26,6 +29,7 @@ import com.example.ancodertest.TableLayout.TableLayoutActivity;
 import com.example.ancodertest.Test.TestActivity;
 import com.example.ancodertest.ListActivityTest.listViewActivity;
 import com.example.ancodertest.TheCustomViewTest.CustomStarView;
+import com.example.ancodertest.ToolBarTest.ToolBarActivity;
 import com.example.ancodertest.ViewSwitcherTest.ImageSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.TextSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
@@ -61,7 +65,11 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("FragmentTestActivity","Fragent 测试", FragmentTestActivity.class),
             new MainClassTypeModel("ActivityThelifecycle","activity生命周期", ActivityThelifecycle.class),
             new MainClassTypeModel("GestureDetector","手势探测器", com.example.ancodertest.GestureDetector.GestureDetector.class),
-            new MainClassTypeModel("CustomStarView","自定义✨view", CustomStarView.class)
+            new MainClassTypeModel("CustomStarView","自定义✨view", CustomStarView.class),
+            new MainClassTypeModel("ScrowViewActivity","ScrowView测试", ScrowViewActivity.class),
+            new MainClassTypeModel("LinkageNestedScrollView","嵌套NestedScrollView", LinkageNestedScrollView.class),
+            new MainClassTypeModel("ToolBarActivity","ToolBar测试", ToolBarActivity.class),
+            new MainClassTypeModel("AppBarLayoutActivity","AppBarLayout测试", AppBarLayoutActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolBarTest.ToolBarActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+
+        app:logo="@mipmap/ic_launcher"
+        app:navigationContentDescription=""
+        app:subtitle="子标题"
+        app:subtitleTextColor="@color/color2"
+        app:titleMarginStart="90dp"
+        app:navigationIcon="@drawable/bg_new"
+        app:title="标题"
+        app:titleTextColor="@color/color6"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="标题"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+    </android.support.v7.widget.Toolbar>
+
+</android.support.constraint.ConstraintLayout>

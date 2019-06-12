@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name=".SeverTest.SecondService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".SeverTest.FirstService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".SeverTest.SeverActivity" />
+        <activity android:name=".TabLayoutTest.TabLayoutTestActivity" />
         <activity
             android:name=".AppBarLayoutTest.AppBarLayoutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

@@ -23,8 +23,10 @@ import com.example.ancodertest.RelativeLayout.RelativeLayoutActivity;
 import com.example.ancodertest.ScrowViewActivityTest.LinkageNestedScrollView;
 import com.example.ancodertest.ScrowViewActivityTest.ScrowViewActivity;
 import com.example.ancodertest.SeekBarTest.SeekBarTestActivity;
+import com.example.ancodertest.SeverTest.SeverActivity;
 import com.example.ancodertest.SimpleListViewTest.SimpleListViewActivity;
 import com.example.ancodertest.StackViewTest.StackViewActivityTest;
+import com.example.ancodertest.TabLayoutTest.TabLayoutTestActivity;
 import com.example.ancodertest.TableLayout.TableLayoutActivity;
 import com.example.ancodertest.Test.TestActivity;
 import com.example.ancodertest.ListActivityTest.listViewActivity;
@@ -69,7 +71,9 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("ScrowViewActivity","ScrowView测试", ScrowViewActivity.class),
             new MainClassTypeModel("LinkageNestedScrollView","嵌套NestedScrollView", LinkageNestedScrollView.class),
             new MainClassTypeModel("ToolBarActivity","ToolBar测试", ToolBarActivity.class),
-            new MainClassTypeModel("AppBarLayoutActivity","AppBarLayout测试", AppBarLayoutActivity.class)
+            new MainClassTypeModel("AppBarLayoutActivity","AppBarLayout测试", AppBarLayoutActivity.class),
+            new MainClassTypeModel("TabLayoutTestActivity","TabLayout测试", TabLayoutTestActivity.class),
+            new MainClassTypeModel("SeverActivity","测试Service", SeverActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

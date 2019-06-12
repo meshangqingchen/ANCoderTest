@@ -36,6 +36,7 @@ public class StarView extends View {
     private void init(Context context,AttributeSet attrs){
         setClickable(false);
         TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.StarView);
+
         startSpace = (int) typedArray.getDimension(R.styleable.StarView_startSpace, 0);
         startSize = (int) typedArray.getDimension(R.styleable.StarView_startSize, 2);
         startCount = typedArray.getInteger(R.styleable.StarView_startCount, 5);

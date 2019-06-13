@@ -33,7 +33,7 @@
             StartView:startEmpty="@drawable/star_dark"
             StartView:startFill="@drawable/star_light"
             StartView:startSize="15dp"
-            StartView:startSpace="5dp" />
+            StartView:startSpace="10dp" />
 
     </LinearLayout>
 

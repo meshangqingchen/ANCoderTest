@@ -36,6 +36,8 @@ import com.example.ancodertest.ViewSwitcherTest.ImageSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.TextSwitcherActivity;
 import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
 import com.example.ancodertest.InternPush.intentPushActivity;
+import com.example.ancodertest.Broadcast.broadcastActivity;
+import com.example.ancodertest.dialog.dialogActivity;
 
 import java.util.List;
 import static java.util.Arrays.asList;
@@ -73,7 +75,9 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("ToolBarActivity","ToolBar测试", ToolBarActivity.class),
             new MainClassTypeModel("AppBarLayoutActivity","AppBarLayout测试", AppBarLayoutActivity.class),
             new MainClassTypeModel("TabLayoutTestActivity","TabLayout测试", TabLayoutTestActivity.class),
-            new MainClassTypeModel("SeverActivity","测试Service", SeverActivity.class)
+            new MainClassTypeModel("SeverActivity","测试Service", SeverActivity.class),
+            new MainClassTypeModel("broadcastActivity","broadcast广播测试",broadcastActivity.class),
+            new MainClassTypeModel("dialogActivity","自定义弹框",dialogActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

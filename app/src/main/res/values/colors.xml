@@ -9,4 +9,7 @@
     <color name="color4">#ff0</color>
     <color name="color5">#f0f</color>
     <color name="color6">#0ff</color>
+    <color name="primary_text_color">#FFF</color>
+    <color name="sub_text_color">#99FFFFFF</color>
+    <color name="dialog_bg_color">#353C43</color>
 </resources>

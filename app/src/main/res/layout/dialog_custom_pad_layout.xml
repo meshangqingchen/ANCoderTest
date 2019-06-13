@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450mm"
+    android:layout_height="250mm"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_pad_fleet_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120mm"
+        android:layout_marginTop="12mm"
+        android:layout_marginHorizontal="20mm"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/custom_pad_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="温馨提示"
+            android:textColor="@color/primary_text_color"
+            android:textSize="26mm" />
+        <TextView
+            android:id="@+id/custom_pad_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12mm"
+            android:gravity="center"
+            tools:text="您确定删除选中的文件么？"
+            android:textColor="@color/sub_text_color"
+            android:textSize="18mm" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40mm"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/custom_pad_dialog_cancel"
+            android:layout_width="198mm"
+            android:layout_height="60mm"
+            android:layout_marginRight="16mm"
+            android:gravity="center"
+            android:background="@drawable/dialog_cancel_btn_bg"
+            android:text="@string/bind_device_dialog_cancle"
+            android:textColor="@color/primary_text_color"
+            android:textSize="22mm" />
+
+        <TextView
+            android:id="@+id/custom_pad_dialog_ok"
+            android:layout_width="198mm"
+            android:layout_height="60mm"
+            android:gravity="center"
+            android:background="@drawable/dialog_confirm_btn_bg"
+            android:text="@string/bind_device_dialog_confirm"
+            android:textColor="@color/primary_text_color"
+            android:textSize="22mm" />
+    </LinearLayout>
+</LinearLayout>

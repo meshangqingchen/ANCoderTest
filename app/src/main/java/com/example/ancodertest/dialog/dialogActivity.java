@@ -10,16 +10,23 @@ import com.example.ancodertest.R;
 public class dialogActivity extends AppCompatActivity {
 
     CustomDialogPad customDialogPad;
-
+    SelectYearDialog selectYearDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog);
         customDialogPad = new CustomDialogPad(this);
+
+        selectYearDialog = new SelectYearDialog(this);
+
     }
 
     public void show(View bt){
         customDialogPad.setTitleText("hahah").show();
+    }
+
+    public void showSelectYearDialog (View bt){
+        selectYearDialog.show();
     }
 
     public void dismiss(View bt){

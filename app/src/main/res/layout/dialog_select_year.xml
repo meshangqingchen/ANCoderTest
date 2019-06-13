@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="428mm"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_top_coner_shape">
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="70mm"
+            android:gravity="center"
+            android:paddingLeft="54mm"
+            android:paddingRight="54mm"
+            android:text="取消"
+            android:textColor="@color/color_btn_green"
+            android:textSize="28mm" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="70mm"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="年份"
+            android:textColor="@color/white"
+            android:textSize="28mm" />
+
+        <TextView
+            android:id="@+id/txt_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="70mm"
+            android:gravity="center"
+            android:paddingLeft="54mm"
+            android:paddingRight="54mm"
+            android:text="确定"
+            android:textColor="@color/color_btn_green"
+            android:textSize="28mm" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:background="@drawable/black_bottom_coner_shape"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <com.example.ancodertest.dialog.YearPicker
+            android:id="@+id/year_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/year_picker"
+            app:itemTextColor="@color/white"
+            app:itemTextSize="28mm"
+            app:selectedTextColor="@color/white"
+            app:selectedTextSize="32mm"
+            app:wheelCurtainBorderColor="#CCFFFFFF"
+            app:wheelCurtainColor="@color/transparent" />
+
+    </LinearLayout>
+</RelativeLayout>

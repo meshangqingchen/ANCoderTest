@@ -60,7 +60,6 @@ public class YearPicker extends WheelPicker<Integer> {
         mStartYear = a.getInteger(R.styleable.YearPicker_startYear, 1900);
         mEndYear = a.getInteger(R.styleable.YearPicker_endYear, 2100);
         a.recycle();
-
     }
 
     private void updateYear() {

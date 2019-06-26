@@ -10,8 +10,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-//import com.elegant.injector.annotations.From;
-//import com.elegant.injector.api.Injector;
 import com.example.ancodertest.R;
 
 
@@ -20,7 +18,6 @@ import com.example.ancodertest.R;
  */
 public class SelectYearDialog extends Dialog implements View.OnClickListener {
 
-//    @From(R.id.txt_cancel)
     TextView txtCancel;
     TextView txtOk;
     YearPicker yearPicker;
@@ -80,7 +77,6 @@ public class SelectYearDialog extends Dialog implements View.OnClickListener {
             dismiss();
         }
     }
-
 
     public interface OnYearSelectListener {
         void onResult(int year);

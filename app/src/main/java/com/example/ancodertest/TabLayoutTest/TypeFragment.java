@@ -48,7 +48,7 @@ public class TypeFragment extends Fragment {
         View view = inflater.inflate(R.layout.pagerview_content_recyclerview, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.list);
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(mContext,LinearLayoutManager.VERTICAL,false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false);
         recyclerView.setLayoutManager(layoutManager);
         TypeAdapter adapter = new TypeAdapter();
 

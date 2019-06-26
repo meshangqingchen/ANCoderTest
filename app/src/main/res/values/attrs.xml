@@ -19,6 +19,7 @@
         <attr name="currentItemPosition"/>
         <attr name="itemWidthSpace"/>
         <attr name="itemHeightSpace"/>
+        <attr name="mIsShowCurtain"/>
         <attr name="zoomInSelectedItem"/>
         <attr name="wheelCyclic"/>
         <attr name="wheelCurtain"/>

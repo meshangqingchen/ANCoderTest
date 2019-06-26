@@ -184,7 +184,6 @@ public class WheelPicker<T> extends View {
      */
     private boolean mIsCyclic = true;
 
-
     /**
      * 最大可以Fling的距离
      */
@@ -252,6 +251,7 @@ public class WheelPicker<T> extends View {
         mScroller = new Scroller(context);
 
         ViewConfiguration configuration = ViewConfiguration.get(context);
+        //允许滑动的最小距离
         mTouchSlop = configuration.getScaledTouchSlop();
     }
 
@@ -282,6 +282,46 @@ public class WheelPicker<T> extends View {
         a.recycle();
     }
 
+    private void initPaint() {
+        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setTextAlign(Paint.Align.CENTER);
+
+        mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
+        mTextPaint.setStyle(Paint.Style.FILL);
+        mTextPaint.setTextAlign(Paint.Align.CENTER);
+        mTextPaint.setColor(mTextColor);
+        mTextPaint.setTextSize(mTextSize);
+
+        mSelectedItemPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
+        mSelectedItemPaint.setStyle(Paint.Style.FILL);
+        mSelectedItemPaint.setTextAlign(Paint.Align.CENTER);
+        mSelectedItemPaint.setColor(mSelectedItemTextColor);
+        mSelectedItemPaint.setTextSize(mSelectedItemTextSize);
+
+        mIndicatorPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
+        mIndicatorPaint.setStyle(Paint.Style.FILL);
+        mIndicatorPaint.setTextAlign(Paint.Align.LEFT);
+        mIndicatorPaint.setColor(mIndicatorTextColor);
+        mIndicatorPaint.setTextSize(mIndicatorTextSize);
+    }
+
+    //给数据
+    public void setDataList(@NonNull List<T> dataList) {
+        mDataList = dataList;
+        if (dataList.size() == 0) {
+            return;
+        }
+        computeTextSize();
+        computeFlingLimitY();
+        /*
+         * requestLayout方法会导致View的onMeasure、onLayout、onDraw方法被调用；
+         * invalidate方法则只会导致View的onDraw方法被调用
+         * */
+        requestLayout();
+        postInvalidate();
+    }
+
     public void computeTextSize() {
         mTextMaxWidth = mTextMaxHeight = 0;
         if (mDataList.size() == 0) {
@@ -300,26 +340,6 @@ public class WheelPicker<T> extends View {
         mTextMaxHeight = (int) (metrics.bottom - metrics.top);
     }
 
-    private void initPaint() {
-        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
-        mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setTextAlign(Paint.Align.CENTER);
-        mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
-        mTextPaint.setStyle(Paint.Style.FILL);
-        mTextPaint.setTextAlign(Paint.Align.CENTER);
-        mTextPaint.setColor(mTextColor);
-        mTextPaint.setTextSize(mTextSize);
-        mSelectedItemPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
-        mSelectedItemPaint.setStyle(Paint.Style.FILL);
-        mSelectedItemPaint.setTextAlign(Paint.Align.CENTER);
-        mSelectedItemPaint.setColor(mSelectedItemTextColor);
-        mSelectedItemPaint.setTextSize(mSelectedItemTextSize);
-        mIndicatorPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.LINEAR_TEXT_FLAG);
-        mIndicatorPaint.setStyle(Paint.Style.FILL);
-        mIndicatorPaint.setTextAlign(Paint.Align.LEFT);
-        mIndicatorPaint.setColor(mIndicatorTextColor);
-        mIndicatorPaint.setTextSize(mIndicatorTextSize);
-    }
 
     /**
      * 计算实际的大小
@@ -337,6 +357,7 @@ public class WheelPicker<T> extends View {
         }
     }
 
+    //确定size
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int specWidthSize = MeasureSpec.getSize(widthMeasureSpec);
@@ -365,7 +386,9 @@ public class WheelPicker<T> extends View {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         mDrawnRect.set(getPaddingLeft(), getPaddingTop(), getWidth() - getPaddingRight(), getHeight() - getPaddingBottom());
+
         mItemHeight = mDrawnRect.height() / getVisibleItemCount();
+
         mFirstItemDrawX = mDrawnRect.centerX();
         mFirstItemDrawY = (int) ((mItemHeight - (mSelectedItemPaint.ascent() + mSelectedItemPaint.descent())) / 2);
         //中间的Item边框
@@ -399,12 +422,13 @@ public class WheelPicker<T> extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         mPaint.setTextAlign(Paint.Align.CENTER);
+
         if (mIsShowCurtain) {
             mPaint.setStyle(Paint.Style.FILL);
             mPaint.setColor(mCurtainColor);
-            canvas.drawLine(mSelectedItemRect.left, mSelectedItemRect.top, mSelectedItemRect.right, mSelectedItemRect.top, mPaint);
-            canvas.drawLine(mSelectedItemRect.left, mSelectedItemRect.bottom, mSelectedItemRect.right, mSelectedItemRect.bottom, mPaint);
+            canvas.drawRect(mSelectedItemRect,mPaint);
         }
+
         if (mIsShowCurtainBorder) {
             mPaint.setStyle(Paint.Style.STROKE);
             mPaint.setStrokeWidth(1.0f);
@@ -482,7 +506,6 @@ public class WheelPicker<T> extends View {
             canvas.drawText(mIndicatorText, mFirstItemDrawX + mTextMaxWidth / 2, mCenterItemDrawnY, mIndicatorPaint);
         }
     }
-
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -565,7 +588,6 @@ public class WheelPicker<T> extends View {
         }
     }
 
-
     public void setOnWheelChangeListener(OnWheelChangeListener<T> onWheelChangeListener) {
         mOnWheelChangeListener = onWheelChangeListener;
     }
@@ -588,17 +610,6 @@ public class WheelPicker<T> extends View {
 
     public List<T> getDataList() {
         return mDataList;
-    }
-
-    public void setDataList(@NonNull List<T> dataList) {
-        mDataList = dataList;
-        if (dataList.size() == 0) {
-            return;
-        }
-        computeTextSize();
-        computeFlingLimitY();
-        requestLayout();
-        postInvalidate();
     }
 
     public int getTextColor() {

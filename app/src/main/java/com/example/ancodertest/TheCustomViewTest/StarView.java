@@ -85,7 +85,6 @@ public class StarView extends View {
     }
 
     public void setStartMark(int mark) {
-
         startMark = Math.round(mark * 10) * 1.0f / 10;
         startMark = (float) Math.rint((startMark * startCount) / 10);
         invalidate();

@@ -6,7 +6,6 @@
     android:background="@color/transparent"
     android:orientation="vertical">
 
-
     <LinearLayout
         android:id="@+id/rl_title"
         android:layout_width="match_parent"
@@ -48,7 +47,6 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -57,18 +55,27 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
-
+        <!--android:layout_alignStart="@+id/year_picker"-->
+        <!--app:itemTextColor="@color/white"
+            app:itemTextSize="28mm"
+            app:selectedTextColor="@color/white"
+            app:selectedTextSize="32mm"
+            app:wheelCurtainBorderColor="#CCFFFFFF"
+            app:wheelCurtainColor="@color/transparent"-->
         <com.example.ancodertest.dialog.YearPicker
             android:id="@+id/year_picker"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignStart="@+id/year_picker"
+
+            app:indicatorText="哎哎哎啊"
+            app:zoomInSelectedItem="false"
             app:itemTextColor="@color/white"
             app:itemTextSize="28mm"
             app:selectedTextColor="@color/white"
             app:selectedTextSize="32mm"
             app:wheelCurtainBorderColor="#CCFFFFFF"
-            app:wheelCurtainColor="@color/transparent" />
+            app:wheelCurtainColor="@color/color_btn_green" />
 
     </LinearLayout>
+
 </RelativeLayout>

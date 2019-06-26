@@ -2,6 +2,7 @@ package com.example.ancodertest.dialog;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,6 +27,16 @@ public class dialogActivity extends AppCompatActivity {
     }
 
     public void showSelectYearDialog (View bt){
+
+        selectYearDialog.setOnYearSelectListener(new SelectYearDialog.OnYearSelectListener() {
+
+            @Override
+            public void onResult(int year) {
+                Log.i("year","-"+year);
+            }
+
+        });
+
         selectYearDialog.show();
     }
 

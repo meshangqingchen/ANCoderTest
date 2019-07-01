@@ -7,4 +7,5 @@
     <string name="title_activity_thelifecycle">ActivityThelifecycle</string>
     <string name="bind_device_dialog_cancle">取消</string>
     <string name="bind_device_dialog_confirm">确定</string>
+    <string name="title_activity_super_edittext">superEdittextActivity</string>
 </resources>

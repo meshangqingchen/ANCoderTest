@@ -56,4 +56,13 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
+    <style name="Theme.AppMain.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppMain.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AppMain.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

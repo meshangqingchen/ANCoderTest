@@ -13,6 +13,7 @@ import com.example.ancodertest.FragmentTest.FragmentTestActivity;
 import com.example.ancodertest.FrameLayout.FrameLayoutActivity;
 import com.example.ancodertest.GridLayout.GridLayoutActivity;
 import com.example.ancodertest.GridLayout.GridViewActivity;
+import com.example.ancodertest.HandlerTest.HandlerActivity;
 import com.example.ancodertest.ImageButtonTest.ImageButtonActivi;
 import com.example.ancodertest.ImageView.ImageViewActivity;
 import com.example.ancodertest.InternPush.IntentPushActivityB;
@@ -38,6 +39,7 @@ import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
 import com.example.ancodertest.InternPush.intentPushActivity;
 import com.example.ancodertest.Broadcast.broadcastActivity;
 import com.example.ancodertest.dialog.dialogActivity;
+import com.example.ancodertest.superEdittext.superEdittextActivity;
 
 import java.util.List;
 import static java.util.Arrays.asList;
@@ -77,7 +79,9 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("TabLayoutTestActivity","TabLayout测试", TabLayoutTestActivity.class),
             new MainClassTypeModel("SeverActivity","测试Service", SeverActivity.class),
             new MainClassTypeModel("broadcastActivity","broadcast广播测试",broadcastActivity.class),
-            new MainClassTypeModel("dialogActivity","自定义弹框",dialogActivity.class)
+            new MainClassTypeModel("dialogActivity","自定义弹框",dialogActivity.class),
+            new MainClassTypeModel("HandlerActivity","Handler 线程通信", HandlerActivity.class),
+            new MainClassTypeModel("superEdittextActivity","自定义EdittextView", superEdittextActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

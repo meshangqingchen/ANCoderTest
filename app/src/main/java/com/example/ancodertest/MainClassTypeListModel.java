@@ -40,6 +40,8 @@ import com.example.ancodertest.InternPush.intentPushActivity;
 import com.example.ancodertest.Broadcast.broadcastActivity;
 import com.example.ancodertest.dialog.dialogActivity;
 import com.example.ancodertest.superEdittext.superEdittextActivity;
+import com.example.ancodertest.superEdittext1.superEdittextActivity1;
+
 
 import java.util.List;
 import static java.util.Arrays.asList;
@@ -81,7 +83,8 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("broadcastActivity","broadcast广播测试",broadcastActivity.class),
             new MainClassTypeModel("dialogActivity","自定义弹框",dialogActivity.class),
             new MainClassTypeModel("HandlerActivity","Handler 线程通信", HandlerActivity.class),
-            new MainClassTypeModel("superEdittextActivity","自定义EdittextView", superEdittextActivity.class)
+            new MainClassTypeModel("superEdittextActivity","自定义EdittextView", superEdittextActivity.class),
+            new MainClassTypeModel("superEdittextActivity1","自定义view 模仿敲一遍",superEdittextActivity1.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

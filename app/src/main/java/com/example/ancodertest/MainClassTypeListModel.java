@@ -18,6 +18,7 @@ import com.example.ancodertest.ImageButtonTest.ImageButtonActivi;
 import com.example.ancodertest.ImageView.ImageViewActivity;
 import com.example.ancodertest.InternPush.IntentPushActivityB;
 import com.example.ancodertest.LinearLayout.LinearLayoutActivity;
+import com.example.ancodertest.MarqueeLayout.MarqueeLayoutActivity;
 import com.example.ancodertest.ProgressBarTest.ProgressBarTestActivity;
 import com.example.ancodertest.QuickContactBadgeTest.QuickContactBadgeActivity;
 import com.example.ancodertest.RelativeLayout.RelativeLayoutActivity;
@@ -39,6 +40,7 @@ import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
 import com.example.ancodertest.InternPush.intentPushActivity;
 import com.example.ancodertest.Broadcast.broadcastActivity;
 import com.example.ancodertest.dialog.dialogActivity;
+import com.example.ancodertest.okhttp3Test.Okhttp3;
 import com.example.ancodertest.superEdittext.superEdittextActivity;
 import com.example.ancodertest.superEdittext1.superEdittextActivity1;
 
@@ -84,7 +86,9 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("dialogActivity","自定义弹框",dialogActivity.class),
             new MainClassTypeModel("HandlerActivity","Handler 线程通信", HandlerActivity.class),
             new MainClassTypeModel("superEdittextActivity","自定义EdittextView", superEdittextActivity.class),
-            new MainClassTypeModel("superEdittextActivity1","自定义view 模仿敲一遍",superEdittextActivity1.class)
+            new MainClassTypeModel("superEdittextActivity1","自定义view 模仿敲一遍",superEdittextActivity1.class),
+            new MainClassTypeModel("Okhttp3","测试Okhttp3网络请求", Okhttp3.class),
+            new MainClassTypeModel("MarqueeLayoutActivity","跑马灯MarqueeLayoutActivity", MarqueeLayoutActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

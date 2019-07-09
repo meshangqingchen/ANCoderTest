@@ -19,7 +19,7 @@ import com.example.ancodertest.R;
 public class LinkageNestedScrollView extends AppCompatActivity {
 
 
-//    @BindView(R.id.iv_back)
+//    .iv_back)
 //    ImageView mIvBack;
 //    @BindView(R.id.tv_img_title)
 //    TextView mTvImgTitle;

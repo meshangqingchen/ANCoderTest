@@ -36,7 +36,7 @@ android {
 //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
 //    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
 //    compile 'org.greenrobot:greendao:3.2.2'
-//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+//    annotationProcessor 'com.jakewharton:-compiler:8.4.0'
 //}
 
 
@@ -55,4 +55,7 @@ dependencies {
 
     implementation 'me.jessyan:autosize:1.1.2'
     implementation 'com.carson_ho:Super_EditText:1.0.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 }

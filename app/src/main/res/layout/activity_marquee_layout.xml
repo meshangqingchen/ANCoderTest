@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarqueeLayout.MarqueeLayoutActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/icon_headline" />
+
+        <com.example.ancodertest.MarqueeLayout.MarqueeLayout
+            android:id="@+id/marquee_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.example.ancodertest.MarqueeLayout.MarqueeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

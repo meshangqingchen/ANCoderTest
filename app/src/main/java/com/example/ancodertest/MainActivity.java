@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements MainAddapter.Item
         recyclerView = (RecyclerView)findViewById(R.id.home_recycle_view);
         LinearLayoutManager manager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(manager);
-
+        recyclerView.addItemDecoration(new CommonDecoration(this,R.drawable.drawable_itemdecoration));
         MainAddapter addapter = new MainAddapter();
         addapter.setOnClick(this);
         recyclerView.setAdapter(addapter);

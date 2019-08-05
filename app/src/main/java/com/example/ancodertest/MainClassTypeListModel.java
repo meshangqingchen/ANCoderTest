@@ -43,6 +43,7 @@ import com.example.ancodertest.dialog.dialogActivity;
 import com.example.ancodertest.okhttp3Test.Okhttp3;
 import com.example.ancodertest.superEdittext.superEdittextActivity;
 import com.example.ancodertest.superEdittext1.superEdittextActivity1;
+import com.example.ancodertest.TaoBaoHome.TaoBaoHomeActivity;
 
 
 import java.util.List;
@@ -88,7 +89,8 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("superEdittextActivity","自定义EdittextView", superEdittextActivity.class),
             new MainClassTypeModel("superEdittextActivity1","自定义view 模仿敲一遍",superEdittextActivity1.class),
             new MainClassTypeModel("Okhttp3","测试Okhttp3网络请求", Okhttp3.class),
-            new MainClassTypeModel("MarqueeLayoutActivity","跑马灯MarqueeLayoutActivity", MarqueeLayoutActivity.class)
+            new MainClassTypeModel("MarqueeLayoutActivity","跑马灯MarqueeLayoutActivity", MarqueeLayoutActivity.class),
+            new MainClassTypeModel("MainClassTypeModel","淘宝推荐首页TaoBaoHomeActivity",TaoBaoHomeActivity.class)
     );
 
     public List<MainClassTypeModel> getDataList() {

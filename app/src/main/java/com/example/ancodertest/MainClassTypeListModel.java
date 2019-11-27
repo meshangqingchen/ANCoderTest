@@ -1,6 +1,8 @@
 package com.example.ancodertest;
 
 import com.example.ancodertest.AppBarLayoutTest.AppBarLayoutActivity;
+import com.example.ancodertest.ClickToBig.ClickToBigActivity;
+import com.example.ancodertest.Dynamicproxy.DynamicProxyActivity;
 import com.example.ancodertest.GestureDetector.GestureDetector;
 import android.widget.ExpandableListAdapter;
 import android.widget.TextView;
@@ -40,7 +42,7 @@ import com.example.ancodertest.ViewSwitcherTest.ViewSwitcherTestActivity;
 import com.example.ancodertest.InternPush.intentPushActivity;
 import com.example.ancodertest.Broadcast.broadcastActivity;
 import com.example.ancodertest.dialog.dialogActivity;
-import com.example.ancodertest.okhttp3Test.Okhttp3;
+
 import com.example.ancodertest.superEdittext.superEdittextActivity;
 import com.example.ancodertest.superEdittext1.superEdittextActivity1;
 import com.example.ancodertest.TaoBaoHome.TaoBaoHomeActivity;
@@ -88,9 +90,12 @@ public class MainClassTypeListModel {
             new MainClassTypeModel("HandlerActivity","Handler 线程通信", HandlerActivity.class),
             new MainClassTypeModel("superEdittextActivity","自定义EdittextView", superEdittextActivity.class),
             new MainClassTypeModel("superEdittextActivity1","自定义view 模仿敲一遍",superEdittextActivity1.class),
-            new MainClassTypeModel("Okhttp3","测试Okhttp3网络请求", Okhttp3.class),
+//            new MainClassTypeModel("Okhttp3","测试Okhttp3网络请求", Okhttp3.class),
             new MainClassTypeModel("MarqueeLayoutActivity","跑马灯MarqueeLayoutActivity", MarqueeLayoutActivity.class),
-            new MainClassTypeModel("MainClassTypeModel","淘宝推荐首页TaoBaoHomeActivity",TaoBaoHomeActivity.class)
+            new MainClassTypeModel("TaoBaoHomeActivity","淘宝推荐首页TaoBaoHomeActivity",TaoBaoHomeActivity.class),
+            new MainClassTypeModel("DynamicProxyActivity","动态代理", DynamicProxyActivity.class),
+            new MainClassTypeModel("ClickToBigActivity","RecyclerView点击放大", ClickToBigActivity.class)
+
     );
 
     public List<MainClassTypeModel> getDataList() {

@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppMain"
         android:usesCleartextTraffic="true">
-        <activity android:name=".TaoBaoHome.TaoBaoHomeActivity"></activity>
+        <activity android:name=".ClickToBig.ClickToBigActivity"></activity>
+        <activity android:name=".Dynamicproxy.DynamicProxyActivity" />
+        <activity android:name=".TaoBaoHome.TaoBaoHomeActivity" />
         <activity android:name=".MarqueeLayout.MarqueeLayoutActivity" />
         <activity android:name=".okhttp3Test.Okhttp3" />
         <activity android:name=".superEdittext1.superEdittextActivity1" />

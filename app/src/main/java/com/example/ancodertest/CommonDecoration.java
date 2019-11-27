@@ -30,24 +30,24 @@ public class CommonDecoration extends RecyclerView.ItemDecoration {
 //        outRect.bottom = mDrawable.getIntrinsicHeight();
 //        Log.i("putRect-",outRect.toString());
 
-        if (0 == mTotalItems)
-            mTotalItems = parent.getAdapter().getItemCount();
+
         //在源码中有一个过时的方法，里面有获取当前ItemPosition
+        if (0 == mTotalItems){
+            mTotalItems = parent.getAdapter().getItemCount();
+        }
         int currentItemPosition = ((RecyclerView.LayoutParams) view.getLayoutParams()).getViewLayoutPosition();
-        ((RecyclerView.LayoutParams)view.getLayoutParams()).getViewPosition();
         if (!isLastRow(currentItemPosition, mTotalItems)){
-            outRect.bottom = mDrawable.getIntrinsicWidth();
+            outRect.bottom = mDrawable.getIntrinsicHeight();
         } else{
             outRect.bottom = 0;
         }
-
     }
 
     @Override
     public void onDraw(@NonNull Canvas c, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
         super.onDraw(c, parent, state);
         for (int i = 0; i < parent.getChildCount(); i++) {
-            drawHorizontalDecoration(c, parent.getChildAt(i));
+            drawHorizontalDecoration(c, parent.getChildAt(i),parent);
         }
     }
 
@@ -57,7 +57,14 @@ public class CommonDecoration extends RecyclerView.ItemDecoration {
 
     }
 
-    private void drawHorizontalDecoration(Canvas canvas, View childView) {
+    private void drawHorizontalDecoration(Canvas canvas, View childView, RecyclerView parent) {
+
+
+        int currentItemPosition = ((RecyclerView.LayoutParams) childView.getLayoutParams()).getViewLayoutPosition();
+        if (isLastRow(currentItemPosition, mTotalItems)) {
+            return;
+        }
+
         Rect rect = new Rect(0, 0, 0, 0);
         rect.top = childView.getBottom();
         rect.bottom = rect.top + mDrawable.getIntrinsicHeight();

@@ -9,6 +9,7 @@ import com.example.ancodertest.R;
 import java.util.ArrayList;
 import java.util.List;
 import butterknife.BindView;
+import butterknife.BindViews;
 import butterknife.ButterKnife;
 
 public class MarqueeLayoutActivity extends AppCompatActivity {
